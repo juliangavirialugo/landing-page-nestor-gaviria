@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    background-image: linear-gradient(
+        100deg,
+      
+        rgba(47,23,99,1) 50%,
+        rgba(31,13,65,1) 65%,
+        rgba(31,12,66,1) 10%
+    );
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+ .menu{
+    display: flex;
+    justify-content:space-between ;
+    padding:  20px 40px;
+}
+
+ .logo{
+    color:  rgba(204,66,225,1);
+    font-size: 1.5625rem;
+    text-transform: uppercase;
+}
+.menu input, label{
+    display: hidden;
+}
+
+ .navbar ul{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    & li{
+        padding: 0 1.25rem;
+        font-size: 1.25rem;
+        & a{
+            color: #fff;
+
+        }
+
+    }
+}
+ .navbar ul li a:hover{
+    color: #EE13c4;
+}
+
+form{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #ffff;
+    padding: 5% 20%;
+    & #emailHelp{
+        color: #ffff;
+    }
+    & h1{
+        color: #ffff;
+    }
+    h2{
+        color: #ffff;
+    }
+    & select{
+        width: 80%;
+        margin: 10px 0 20px;
+        max-width: 300px;
+    }
+    & button{
+        width: 40%;
+        max-width: 200px;
+       
+       
+    }
+    & #formFile{
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+label{
+    color: aliceblue;
+}
+
+@media (max-width: 570px) {
+    .navbar{
+        width: 100px;
+    }
+    .navbar ul{
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        flex-direction: column;
+        & li{
+            align-items: center;
+            width: 120px;
+        }
+        & a{
+            font-size: 14px;
+        }
+    }
+}
